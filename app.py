@@ -6,27 +6,6 @@ import plotly.graph_objects as go
 from scipy.stats import norm
 from scipy.stats import multivariate_normal
 
-
-# Title of the app
-
-#manage cache (see other function  like st.cache_resource)
-@st.cache_data
-def load_data():
-    return pd.read_csv('/Users/hugorameil/Documents/GitHub/data-science-tutorials/introduction-to-python/train.csv')
-
-data = load_data()
-
-#objective : create a gaussian vector application 
-#1. page : univariate case
-
-#2. page : multivariate case
-
-#1. create a function that generates a gaussian vector
-def gaussian_vector(n, mu, sigma):
-    return np.random.multivariate_normal(mu, sigma, n)
-
-
-
 ####################################################
 
 st.sidebar.title("Table of contents")
@@ -35,8 +14,6 @@ page = st.sidebar.radio("Go to page...", pages)
 
 st.sidebar.markdown("---")  
 st.sidebar.write("Author: Hugo Rameil")
-
-##################################################
 
 #################### PAGE 0 #####################
 
