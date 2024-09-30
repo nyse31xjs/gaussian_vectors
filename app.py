@@ -19,8 +19,6 @@ st.sidebar.write("Author: Hugo Rameil")
 
 if page == pages[0]:
     st.title("Univariate Gaussian Distribution")
-    #st.latex(r"f(\mathbf{X}) = \frac{1}{(2\pi)^{n/2} |\boldsymbol{\Sigma}|^{1/2}} \exp\left( -\frac{1}{2} (\mathbf{X} - \boldsymbol{\mu})^\top \boldsymbol{\Sigma}^{-1} (\mathbf{X} - \boldsymbol{\mu}) \right)")
-
 
     st.write("""
     The **Gaussian distribution**, also known as the Normal distribution, is a continuous probability distribution characterized by its symmetric bell-shaped curve. 
@@ -71,7 +69,6 @@ if page == pages[0]:
     In this case, the distribution is defined by a **mean vector** and a **covariance matrix**.
     """)
 
-    # Mean Vector Explanation
     st.write("### Mean Vector **μ**:")
     st.write("""
     The mean vector **μ** is a **k**-dimensional vector that represents the expected values of each random variable. The mean vector is given by:
@@ -85,7 +82,6 @@ if page == pages[0]:
     \end{bmatrix}
     """)
     
-    # Covariance Matrix Explanation
     st.write("### Covariance Matrix ( \( \Sigma \) ):")
     st.write("""
     The covariance matrix \( \Sigma \) represents the variances of each variable along the diagonal and the covariances between pairs of variables off the diagonal.
@@ -100,7 +96,6 @@ if page == pages[0]:
     \end{bmatrix}
     """)
 
-    # Probability Density Function (PDF) of Multivariate Gaussian Distribution
     st.write("### Probability Density Function (PDF):")
     st.write("""
     The PDF of the multivariate Gaussian distribution is given by:
@@ -109,7 +104,6 @@ if page == pages[0]:
     f(\mathbf{x} | \mu, \Sigma) = \frac{1}{\sqrt{(2\pi)^k |\Sigma|}} \exp\left(-\frac{1}{2} (\mathbf{x} - \mu)^T \Sigma^{-1} (\mathbf{x} - \mu)\right)
     """)
 
-    # Explanation of the PDF
     st.write("""
     In this formula:
     - \( \mathbf{x} \) is a \( k \)-dimensional vector representing the random variables.
@@ -119,7 +113,6 @@ if page == pages[0]:
     - \( \Sigma^{-1} \) is the inverse of the covariance matrix.
     """)
 
-    # Properties of Multivariate Gaussian Distribution
     st.write("### Properties of the Multivariate Gaussian Distribution:")
     st.write("""
     1. **Mean vector**: The mean vector \( \mu \) represents the central point of the distribution.
@@ -127,7 +120,6 @@ if page == pages[0]:
     3. **Independence**: If the off-diagonal entries of the covariance matrix are zero, the variables are uncorrelated (and independent in the case of Gaussian distributions).
     """)
 
-    # Special Case: Standard Multivariate Normal Distribution
     st.write("### Standard Multivariate Normal Distribution:")
     st.write("""
     A special case of the multivariate normal distribution is when the mean vector \( \mu \) is a zero vector, and the covariance matrix \( \Sigma \) is the identity matrix.
@@ -139,8 +131,6 @@ if page == pages[0]:
     st.write("""
     This corresponds to the case where all variables are independent standard normal variables.
     """)
-
-
 
 #################### PAGE 1 #####################
 
